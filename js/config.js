@@ -148,12 +148,11 @@ const LAYER_DEFS = {
     policies:    { title: 'Subnational Industrial Policies', type: 'choropleth', colorType: 'sequential' },
     instruments: { title: 'Instruments',           type: 'choropleth', colorType: 'categorical' },
     federal:     { title: 'Federal Programs',      type: 'choropleth', colorType: 'sequential' },
-    fdi:         { title: 'Foreign Direct Investment (FDI)', type: 'choropleth', colorType: 'sequential' },
+    fdi:         { title: 'Investments', type: 'choropleth', colorType: 'sequential' },
     sectors:     { title: 'Dominant Sector',       type: 'choropleth', colorType: 'categorical' },
     hs_codes:    { title: 'HS Code Sectors',       type: 'choropleth', colorType: 'categorical' },
     education:   { title: 'Education Policies',    type: 'choropleth', colorType: 'sequential' },
     rd:          { title: 'R&D Policies',          type: 'choropleth', colorType: 'sequential' },
-    energy:      { title: 'Energy Projects',       type: 'markers' },
     greenmfg:    { title: 'Green Manufacturing',   type: 'markers' },
     mines:       { title: 'Mines',                 type: 'markers' },
     polos:       { title: 'Development Poles (Polos de Bienestar)', type: 'markers' }
@@ -168,16 +167,12 @@ const POLOS_CATEGORY_COLORS = {
     "default": "#94A3B8"
 };
 
-// English display labels for polo categories
-// Pipeline: Under Evaluation → Approved → In Procurement → Concessions Awarded
-// "En marcha" = bidding completed, private concessions awarded to operators
-// "En proceso" = land being secured and/or bidding process opening
-// "Nuevos polos" = approved by Intersecretarial Committee, pending procurement
-// "En evaluación" = feasibility assessment in progress
+// English display labels for polo categories (PODECOBI official terminology)
+// Pipeline: Under Evaluation → Authorized → Under Development → Operational
 const POLOS_CATEGORY_LABELS = {
-    "En marcha": "Concessions Awarded",
-    "En proceso": "In Procurement",
-    "Nuevos polos": "Approved",
+    "En marcha": "Operational",
+    "En proceso": "Under Development",
+    "Nuevos polos": "Authorized",
     "En evaluación": "Under Evaluation"
 };
 
